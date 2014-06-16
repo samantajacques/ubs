@@ -4,6 +4,8 @@ O Projeto UBS é um projeto de Flávia Arrais, Francisco Jardel, Samanta Jacques
 
 ### Contribuindo com código
 
+Tutorial instalar Git + GitHub no Windows: [Clique aqui] (http://blog.dmatoso.com/2011/09/git-no-windows-github/)
+
 Faça as correções, alterações e mudanças que desejar e as coloque nessa pasta (nosso repositório local). Usuários do windows devem atentar para alguns cuidados:
 
 * Não usar TABULAÇÃO no código (substitua por 4 espaços)
