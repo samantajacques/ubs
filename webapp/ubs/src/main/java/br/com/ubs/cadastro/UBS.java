@@ -1,6 +1,8 @@
 package br.com.ubs.cadastro;
 
-import java.util.Date;
+import java.util.Calendar;
+
+import br.com.ubs.jdbc.dao.UBSDao;
 
 public class UBS {
 
@@ -9,9 +11,9 @@ public class UBS {
 	public String nome;
 	public String telefone;
 	public String responsavel;
-	public Date dt_cadastro;
-	public Date dt_inicio;
-	public Date dt_encerramento;
+	public Calendar dt_cadastro;
+	public Calendar dt_inicio;
+	public Calendar dt_encerramento;
 
 	public String getLocalidade() {
 		return localidade;
@@ -45,27 +47,27 @@ public class UBS {
 		this.responsavel = responsavel;
 	}
 
-	public Date getDt_cadastro() {
+	public Calendar getDt_cadastro() {
 		return dt_cadastro;
 	}
 
-	public void setDt_cadastro(Date dt_cadastro) {
+	public void setDt_cadastro(Calendar dt_cadastro) {
 		this.dt_cadastro = dt_cadastro;
 	}
 
-	public Date getDt_inicio() {
+	public Calendar getDt_inicio() {
 		return dt_inicio;
 	}
 
-	public void setDt_inicio(Date dt_inicio) {
+	public void setDt_inicio(Calendar dt_inicio) {
 		this.dt_inicio = dt_inicio;
 	}
 
-	public Date getDt_encerramento() {
+	public Calendar getDt_encerramento() {
 		return dt_encerramento;
 	}
 
-	public void setDt_encerramento(Date dt_encerramento) {
+	public void setDt_encerramento(Calendar dt_encerramento) {
 		this.dt_encerramento = dt_encerramento;
 	}
 
@@ -74,6 +76,10 @@ public class UBS {
 	}
 
 	public void incluirUBS() {
+		
+		UBS ubs = new UBS();
+		UBSDao bd = new UBSDao();
+		bd.adiciona(ubs);
 
 	}
 

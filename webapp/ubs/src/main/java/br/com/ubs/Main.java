@@ -1,21 +1,21 @@
 package br.com.ubs;
 
-import br.com.ubs.cadastro.Pessoa;
+import java.sql.Connection;
+import java.sql.SQLException;
+
+import br.com.ubs.jdbc.ConnectionFactory;
 
 public class Main {
 
 	/**
 	 * @param args
+	 * @throws SQLException 
 	 */
-	public static void main(String[] args) {
+	public static void main(String[] args) throws SQLException {
 		// TODO Auto-generated method stub
 		
-		Pessoa eu = new Pessoa();
-		
-		eu.adicionarPessoa("12345678910");
-		
-		System.out.println(eu.getCpf());
-
+		Connection connection = new ConnectionFactory().getConnection();
+		System.out.println("Conexão aberta!");
+		connection.close();
 	}
-
 }
