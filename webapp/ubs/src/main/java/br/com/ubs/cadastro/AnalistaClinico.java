@@ -3,7 +3,6 @@ package br.com.ubs.cadastro;
 public class AnalistaClinico extends Funcionario {
 	
 	public int crf;
-	public int test;
 
 	public int getCrf() {
 		return crf;
