@@ -15,7 +15,7 @@ public class Main {
 		// TODO Auto-generated method stub
 		
 		Connection connection = new ConnectionFactory().getConnection();
-		System.out.println("Conexão aberta!");
+		System.out.println("Conexão aberta! Chata!");
 		connection.close();
 	}
 }
