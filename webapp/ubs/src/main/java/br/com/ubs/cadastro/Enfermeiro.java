@@ -1,15 +1,12 @@
 package br.com.ubs.cadastro;
 
-public class Enfermeiro {
-	
-	public int corem;
-
-	public int getCorem() {
-		return corem;
-	}
-
-	public void setCorem(int corem) {
-		this.corem = corem;
-	}
-	
+public class Enfermeiro extends Funcionario {
+ 
+	private int coren;
+	 
+	private StatusVacina statusVacina;
+	 
+	private Receita[] receita;
+	 
 }
+ 
