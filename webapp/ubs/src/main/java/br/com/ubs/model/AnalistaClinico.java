@@ -4,6 +4,8 @@ public class AnalistaClinico extends Funcionario {
  
 	private int crf;
 	 
+	
+	
 	private Exame[] exame;
 	 
 }
